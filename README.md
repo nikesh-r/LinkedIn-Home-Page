@@ -1,5 +1,6 @@
 # LinkedIn-Homepage
-Creating LinkedIn Home Page with mobile-first design layout using only html-css.
+Creating LinkedIn Home Page with responsive mobile-first design layout using only html-css and javascript.
+It also contains a collapsing sidebar for mobile view.
 
 ## Screenshots
 

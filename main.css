@@ -81,11 +81,13 @@ body {
 	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 	font-weight: 500;
 	font-size: 16px;
+	color: white;
 }
 #info span {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 1.5rem;
+	color: #CFCFCF;
 }
 #arrow {
 	height: 24px;

@@ -7,30 +7,11 @@ body {
 }
 
 
-#header {
-	background-color: #0073b1;
-	/* position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%; */
-}
-
-#mob-navbar {
-	height: 50px;
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-}
-
-
 #desk-navbar,
 #desk-before-whitespace,
 #desk-after-whitespace{
 	display: none;
 }
-
-
-
 
 
 #sidebar {
@@ -45,18 +26,12 @@ body {
 	transform: translateX(-100vw);
 	z-index: 1;
 	overflow: auto;
-	box-shadow: 4px 0 16px -4px black;
+	box-shadow: 2px 0 16px black;
 	
 }
 
 #sidebar.active {
 	transform: translateX(0);
-}
-
-#sidebar.active ~ #main,
-#sidebar.active ~ #header {
-	transition: 0.5s;
-	filter:blur(6px);
 }
 
 .sidebar-head {
@@ -143,6 +118,22 @@ body {
 }
 
 
+#header {
+	background-color: #0073b1;
+	/* position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%; */
+}
+
+#mob-navbar {
+	height: 50px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+
 #avatar {
 	height: 35px;
 	position: static;
@@ -175,9 +166,8 @@ body {
 	width: 80%;
 	margin-left: 10px;
 	font-family: Arial, Helvetica, sans-serif;
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 1rem;
-	color: #656565;
 	background: #CCC;
 	border: none;
 	outline: none;
@@ -223,7 +213,7 @@ body {
 	line-height: 1.2rem;
 }
 .liked-commented-by button {
-	margin-right: 6px;
+	margin-right: 2px;
 	margin-left: auto;
 	background-color: white;
 	border: none;
@@ -465,7 +455,6 @@ a :visited {
 		margin-top: 6px;
 	}
 
-
 	#desk-navbar {
 		height: 60px;
 		display: flex;
@@ -509,7 +498,6 @@ a :visited {
 		outline: none;
 	}
 
-
 	#desk-nav-controls {
 		display: flex;
 		justify-content: space-around;
@@ -531,6 +519,13 @@ a :visited {
 		color: #b1ab8e;
 		font-family: Arial, Helvetica, sans-serif;
 		font-weight: 400;
+		font-size: 0.9rem;
+	}
+	#desk-premium a :hover{
+		color: #b6a862;
+		text-decoration: underline;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: 500;
 		font-size: 0.9rem;
 	}
 	

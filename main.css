@@ -68,6 +68,7 @@ body {
 }
 .sidebar-head-items {
 	margin: 10px 10px;
+	cursor: pointer;
 }
 
 #pfp {
@@ -80,25 +81,32 @@ body {
 #info {
 	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 	font-weight: 500;
-	font-size: 16px;
-	color: white;
+	font-size: 1.3rem;
+	color: whitesmoke;
 }
 #info span {
 	font-weight: 400;
-	font-size: 14px;
-	line-height: 1.5rem;
-	color: #CFCFCF;
+	font-size: 1rem;
+	/* line-height: 1.2rem; */
+	color: whitesmoke;
 }
 #arrow {
 	height: 24px;
 	align-self: center;
-	transition: 1s;
+	transition: 0.5s;
 	transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
 
 .sidebar-body {
 	padding: 10px 10px;
+}
+
+.sidebar-body hr {
+	stroke: #CCCCCC;
+	width: 80%;
+	height: 1px;
+	margin: 10px auto;
 }
 
 .sidebar-body-items {
@@ -114,6 +122,7 @@ body {
 	height: 24px;
 }
 .sidebar-body-items #user {
+	margin: 0 5px;
 	height: 36px;
 	border-radius: 50%;
 }
@@ -145,6 +154,7 @@ body {
 
 #menu {
 	height: 25px;
+	cursor: pointer;
 }
 
 #search-bar {
@@ -278,7 +288,7 @@ a :visited {
 .post-description p {
 	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 	padding: 10px;
-	font-size: 14px;
+	font-size: 1rem;
 	line-height: 1.2rem;
 }
 .picture-video img {
@@ -344,10 +354,10 @@ a :visited {
 	flex-direction: column;
 }
 .response {
-		display: flex;
-		justify-content: flex-start;
-		align-items: center;
-		padding: 10px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 10px;
 }
 .response-components {
 	padding-right: 1px;
@@ -355,6 +365,7 @@ a :visited {
 	font-size: 0.8rem;
 	font-weight: 600;
 	color: #656565;
+	cursor: pointer;
 }
 #like-count {
 	margin-left: 2px;
@@ -363,21 +374,23 @@ a :visited {
 	margin-left: auto;
 }
 
-hr {
-	stroke: #656565;
-	width: 90%;
-	height: 2px;
-}
+
 
 .respond {
 	display: flex;
 	justify-content: space-evenly;
 	margin-bottom: 5px;
+	
 }
 .respond-button {
 	width: 20%;
 	border: none;
 	background-color: white;
+	cursor: pointer;
+}
+.respond-button:hover {
+	background-color: rgb(150, 150, 150, 0.2);
+	
 }
 .button-img {
 	height: 24px;
@@ -392,6 +405,7 @@ hr {
 	font-weight: 600;
 	color: #656565;
 }
+
 
 
 #nav-bar {

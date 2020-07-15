@@ -8,41 +8,21 @@
 		<link rel="shortcut icon" href="linkedin.png" />
 		<link rel="stylesheet" href="./reset.css">
 		<link rel="stylesheet" href="./main.css">
-		<script>
-			function openSideMenu() {
-				const sideMenuElement = document.querySelector("#sidebar");
-				sideMenuElement.classList.add("active");
-			}
-			function closeSideMenu() {
-				const sideMenuElement = document.querySelector("#sidebar");
-				sideMenuElement.classList.remove("active");
-			}
-			function toggleUserAccount() {
-				const userDetails = document.querySelectorAll(".js-toggle-details");
-				const elements = Array.from(userDetails);
-				elements.forEach(element => {
-					element.classList.toggle("hidden");
-				});
-				const toggleArrow = document.querySelector("#arrow");
-				toggleArrow.classList.toggle("toggle-arrow");
-			}
-		</script>
 	</head>
 	<body>
 
 		<div id="sidebar">
 			<div href="" class="sidebar-head">
-				<img id="pfp" class="sidebar-head-items" src="./res/pfp2.jpg">
+				<img id="pfp" class="sidebar-head-items" src="./res/pfp1.jpg">
 				<img id="moon" class="sidebar-head-items" src="./res/tele/moon.svg" onclick="closeSideMenu()">
-				<p id="info" class="sidebar-head-items">User One<br><span>+91 9191919191</span></p>
+				<p id="info" class="sidebar-head-items">Nikesh<br><span>+91 7415474294</span></p>
 				<img id="arrow" class="sidebar-head-items" src="./res/tele/up-chevron.svg" onclick="toggleUserAccount()">
 			</div>
-
 
 			<div class="sidebar-body">
 
 				<div class="sidebar-body-items js-toggle-details hidden">
-					<img id="user" src="./res/pfp2.jpg">
+					<img id="user" src="./res/pfp1.jpg">
 					<span>User One</span>
 				</div>
 				<div class="sidebar-body-items js-toggle-details hidden">
@@ -51,7 +31,6 @@
 				</div>
 
 				<hr class="js-toggle-details hidden">
-
 
 				<div class="sidebar-body-items">
 					<img src="./res/tele/groupuser.svg">
@@ -98,7 +77,6 @@
 
 		<header id="header">
 
-
 			<div id="mob-navbar">
 
 				<div id="display-pic-container" onclick="openSideMenu()">
@@ -115,8 +93,6 @@
 					<a href=""><img id="direct-msg-icon" src="./res/comment.svg"></a>
 				</div>
 			</div>
-
-
 
 			<div id="desk-navbar">
 				<div id="desk-search">
@@ -154,7 +130,7 @@
 				</div>
 			</div>
 		</header>
-		<div id="main">
+		<div id="main" onclick="closeSideMenu()">
 			<div id="desk-before-whitespace"></div>
 			<div id="cards">
 				<div class="company">
@@ -291,5 +267,6 @@
 			</div>
 			<div id="desk-after-whitespace"></div>
 		</div>
+	<script src="./script.js"></script>
 	</body>
 </html>

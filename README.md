@@ -2,7 +2,7 @@
 Creating LinkedIn Home Page with responsive mobile-first design layout using only html-css and javascript.
 It also contains a collapsing sidebar for mobile view.
 
-Project has been hosted [here](https://nikesh-r.github.io/LinkedIn-Homepage/ "LinkedIn-Homepage"). 
+Project has been hosted [here](https://nikesh-r.github.io/linkedin-homepage-clone/ "linkedin-homepage-clone"). 
 
 ## Screenshots
 
